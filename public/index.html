@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDEO SDK</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://unpkg.com/videosdk-web@latest/dist/videosdk.min.js"></script>
+    <!-- VideoSDK JS SDK -->
+    <script src="https://cdn.videosdk.live/videosdk-rtc.js"></script>
+
+</head>
+<body>
+    <!-- Main Menu-->
+    <div id="menu">
+        <input type="text" value="" placeholder="Enter your name" id="user_name">
+        <button id="newmeeting">New Meeting</button> 
+        <button id="joinmeeting">Join Meeting</button>
+    </div>
+
+    <!-- Section: New Meeting-->
+    <div id="newMeetingSection" class="section hidden">
+        <h2>New Meeting</h2>
+        <!-- <p id="tokenDisplay">Fetching token...</p> -->
+        <!-- <div id="video-container"></div> -->
+        <buttonn id="back1">Back</button>
+    </div>
+
+    <div id="grid-screen" style="display: none">
+        <!-- To Display MeetingId -->
+        <h3 id="meetingIdHeading"></h3>
+
+        <!-- Controllers -->
+        <button id="leaveBtn">Leave</button>
+        <button id="toggleMicBtn">Mic</button>
+        <button id="toggleWebCamBtn">WebCam</button>
+        
+        <!-- render Video -->
+        <div class="row" id="videoContainer"></div>
+    </div>
+
+    
+    <!--Section: Join Meeting-->
+    <div id="joinMeetingSection" class="section hidden">
+        <h2>Join Meeting</h2>
+        <input type="text" id="meetingIdInput" placeholder="Enter Meeting ID"/>
+        <Button id="joinById">Join</Button>
+        <Button id="back2">Back</Button>
+    </div>
+
+    <!-- <div id="msg"></div> -->
+    <script src="./js/index.js"></script>
+    <script src="https://sdk.videosdk.live/js-sdk/0.1.6/videosdk.js"></script>
+
+</body>
+</html>
