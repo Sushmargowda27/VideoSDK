@@ -15,10 +15,6 @@ Backend: Node.js (for token generation & API handling)
 VideoSDK Web SDK for real-time communication
 
 🚀 How it works
-User can create a new meeting → A VideoSDK token is fetched from the backend and a meeting room is created.
-User can join an existing meeting by entering the meeting ID.
-Participants’ video streams are displayed dynamically in the browser.
-Handles events:
-Participant joined/left
-Stream enabled
-Meeting left
+📋User can create a new meeting → A VideoSDK token is generating and fetched from the backend and a meeting room is created.
+📋User can join an existing meeting by entering the meeting ID.
+📋Participants’ video streams are displayed dynamically in the browser.
